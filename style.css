@@ -1,0 +1,128 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-grey);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  color: var(--off-black);
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: center;
+  max-width: 33rem;
+  width: 33rem;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 9rem;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-field label {
+  color: var(--smokey-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.input-field input {
+  color: black;
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 70px;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: var(--purple);
+  caret-color: var(--purple);
+  cursor: pointer;
+}
+
+.divider {
+  margin-top: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.divider-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-grey);
+}
+
+.arrow-icon {
+  min-width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+  background-color: var(--purple);
+  border-radius: 50%;
+  background-image: url('/assets/images/icon-arrow.svg');
+  cursor: pointer;
+}
+
+.arrow-icon:hover {
+  background-color: var(--off-black);
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 4rem;
+  width: 100%;
+}
+
+.output-field {
+  display: flex;
+  gap: 1rem;
+}
+
+.output-number {
+  color: var(--purple);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
